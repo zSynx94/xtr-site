@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="res/logo" type="image/png">
+	<link rel="stylesheet" href="scrollbar.css">
+	<link rel="stylesheet" href="index-styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>XTR ROM</title>
+</head>
+<body>
+	<div id="vanta-container"></div>
+	<div class="body-container">
+		<h1>XTR ROM</h1>
+		<h2>XTR ROM Official Web-Site</h2>
+		<div style="text-align: center;">
+			<br><br>
+			<a href="downloads.html" class="button">Downloads</a>
+			<a href="https://t.me/J250x" class="button button-telegram" target="_blank">Telegram</a>
+			<a href="https://forum.xda-developers.com/t/rom-7-1-1-xtr-rom-for-samsung-galaxy-j2-pro-2018-j250x-2022-12-02.4372071/" class="button button-xda" target="_blank">XDA</a>
+		</div>
+		<br><br><br><br>
+		<div class="description">
+			<div style="text-align: center;">
+				<h3><strong>What is XTR ROM?</strong></h3>
+				<p>xᴛʀ ʀᴏᴍ, developed by Synx94, is a customization of Android 7.1.1 with a OneUI theme that has been optimized and streamlined for improved performance. Designed specifically for the J250x or Galaxy J2 Pro 2018, this rom boasts a range of unique features that make it stand out from other Android customizations. It's important to note, however, that there may be some issues with its functionality. Overall, the xᴛʀ ʀᴏᴍ is an intriguing option for those looking for a more personalized and enhanced Android experience on their J2 Pro 2018 device.</p>
+			</div>
+			<div id="watermark"></div>
+		</div>
+	</div>
+
+	<script src="scripts/three.min.js"></script>
+	<script src="scripts/vanta.dots.min.js"></script>
+	<script>
+		var setVanta = () => {
+			if (window.VANTA) window.VANTA.DOTS({
+				el: "#vanta-container",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.00,
+				minWidth: 200.00,
+				scale: 1.00,
+				scaleMobile: 1.00
+			});
+		}
+
+		window.addEventListener("DOMContentLoaded", () => {
+			setVanta();
+		});
+
+	</script>
+</body>
+</html>
