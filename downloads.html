@@ -9,6 +9,19 @@
 	<title>Downloads</title>
 </head>
 <body>
+	<div class="clock-container">
+		<span id="clock"></span>
+	</div>
+	  <script>
+		function updateClock() {
+		  var now = new Date();
+		  var hours = now.getHours().toString().padStart(2, '0');
+		  var minutes = now.getMinutes().toString().padStart(2, '0'); 
+		  var seconds = now.getSeconds().toString().padStart(2, '0');
+		  document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+		}
+		setInterval(updateClock, 1000);
+	  </script>
 	<div id="vanta-container"></div>
 	<h1>Downloads</h1>
 	<h2>Here you will find the xᴛʀ ʀᴏᴍ updates and their respective changelog</h2>
